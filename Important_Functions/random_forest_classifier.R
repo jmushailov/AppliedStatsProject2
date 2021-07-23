@@ -42,8 +42,8 @@ rf.crossValidation(x = rf_classifier, xdata = train,
                    seed = 2021)
 
 # Accuracy appending
-acc_df <- append(acc_df, round(sum(rf_pred == test$income) / length(test$income),2)*100 )
-model_df <- append(model_df, "Random Forest")
+# acc_df <- append(acc_df, round(sum(rf_pred == test$income) / length(test$income),2)*100 )
+# model_df <- append(model_df, "Random Forest")
 
 # Showing the confusion Matrix 
 paste0("Confusion Matrix of Attrition Classification")
