@@ -38,7 +38,7 @@ confusionMatrix(table(rf_pred, test$income))
 # Cross validation of our dataset .How does it compare with our one-hoc RMSE?
 library(rfUtilities)
 rf.crossValidation(x = rf_classifier, xdata = train, 
-                   trace = TRUE, n = 10, bootstrap = TRUE,
+                   n = 10, bootstrap = TRUE,
                    seed = 2021)
 
 # Accuracy appending
